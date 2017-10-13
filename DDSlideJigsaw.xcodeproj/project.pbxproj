@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A663BEE12E4C59D7B3962F /* Pods_DDSlideJigsaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61B95D433CCCE904811F31A /* Pods_DDSlideJigsaw.framework */; };
 		A6E1F05D1F8D023400C95DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1F05C1F8D023400C95DA8 /* AppDelegate.swift */; };
 		A6E1F05F1F8D023400C95DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1F05E1F8D023400C95DA8 /* ViewController.swift */; };
 		A6E1F0621F8D023400C95DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E1F0601F8D023400C95DA8 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118FE08B21F0D52433C264C5 /* Pods-DDSlideJigsaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSlideJigsaw.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSlideJigsaw/Pods-DDSlideJigsaw.release.xcconfig"; sourceTree = "<group>"; };
+		8BEF280C82E2AD604D1FD58D /* Pods-DDSlideJigsaw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSlideJigsaw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDSlideJigsaw/Pods-DDSlideJigsaw.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E1F0591F8D023400C95DA8 /* DDSlideJigsaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDSlideJigsaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E1F05C1F8D023400C95DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6E1F05E1F8D023400C95DA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		A6E1F0781F8D023400C95DA8 /* DDSlideJigsawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDSlideJigsawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E1F07C1F8D023400C95DA8 /* DDSlideJigsawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDSlideJigsawUITests.swift; sourceTree = "<group>"; };
 		A6E1F07E1F8D023400C95DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61B95D433CCCE904811F31A /* Pods_DDSlideJigsaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDSlideJigsaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A663BEE12E4C59D7B3962F /* Pods_DDSlideJigsaw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308E02DC4217BF23EE6AB035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E61B95D433CCCE904811F31A /* Pods_DDSlideJigsaw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62A82887EA5B60FB20784EDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BEF280C82E2AD604D1FD58D /* Pods-DDSlideJigsaw.debug.xcconfig */,
+				118FE08B21F0D52433C264C5 /* Pods-DDSlideJigsaw.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6E1F0501F8D023400C95DA8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				A6E1F0701F8D023400C95DA8 /* DDSlideJigsawTests */,
 				A6E1F07B1F8D023400C95DA8 /* DDSlideJigsawUITests */,
 				A6E1F05A1F8D023400C95DA8 /* Products */,
+				62A82887EA5B60FB20784EDF /* Pods */,
+				308E02DC4217BF23EE6AB035 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6E1F0811F8D023400C95DA8 /* Build configuration list for PBXNativeTarget "DDSlideJigsaw" */;
 			buildPhases = (
+				EFB99535AA6F908C7B4E6D2D /* [CP] Check Pods Manifest.lock */,
 				A6E1F0551F8D023400C95DA8 /* Sources */,
 				A6E1F0561F8D023400C95DA8 /* Frameworks */,
 				A6E1F0571F8D023400C95DA8 /* Resources */,
+				364A229A7AC96A3AA48885E7 /* [CP] Embed Pods Frameworks */,
+				15909F780D1902370BA3AFFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15909F780D1902370BA3AFFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSlideJigsaw/Pods-DDSlideJigsaw-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364A229A7AC96A3AA48885E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSlideJigsaw/Pods-DDSlideJigsaw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB99535AA6F908C7B4E6D2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6E1F0551F8D023400C95DA8 /* Sources */ = {
@@ -424,6 +499,7 @@
 		};
 		A6E1F0821F8D023400C95DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BEF280C82E2AD604D1FD58D /* Pods-DDSlideJigsaw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +515,7 @@
 		};
 		A6E1F0831F8D023400C95DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118FE08B21F0D52433C264C5 /* Pods-DDSlideJigsaw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
