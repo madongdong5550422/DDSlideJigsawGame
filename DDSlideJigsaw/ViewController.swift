@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // nothing
+        
+        let showLabel:UILabel = UILabel()
+        showLabel.text = "滑动拼图";
+        
+        self.view.addSubview(showLabel)
+        
+        showLabel.snp.makeConstraints { (make) in
+            make.width.equalTo(200)
+            make.center.equalTo(self.view)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
