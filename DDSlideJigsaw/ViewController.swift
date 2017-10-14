@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
@@ -15,17 +16,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // nothing
-        
-        let showLabel:UILabel = UILabel()
-        showLabel.text = "滑动拼图";
-        
-        self.view.addSubview(showLabel)
-        
-        showLabel.snp.makeConstraints { (make) in
-            make.width.equalTo(200)
+        let mainView = SKView()
+        self.view.addSubview(mainView)
+        mainView.snp.makeConstraints { (make) in
+            make.size.equalTo(self.view)
             make.center.equalTo(self.view)
         }
+        
+        mainView.showsFPS = true
+        mainView.showsNodeCount = true
+        mainView.showsFields = true
+        mainView.ignoresSiblingOrder = true
+        
+        let mainScene = SJMainGameScene()
+        
+        mainView.presentScene(mainScene)
         
     }
 
