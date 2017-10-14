@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01A663BEE12E4C59D7B3962F /* Pods_DDSlideJigsaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61B95D433CCCE904811F31A /* Pods_DDSlideJigsaw.framework */; };
 		A653BBD41F91C7DB000FD406 /* SJMainGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653BBD31F91C7DB000FD406 /* SJMainGameScene.swift */; };
+		A653BBD61F920939000FD406 /* SJPieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653BBD51F920939000FD406 /* SJPieceNode.swift */; };
 		A6E1F05D1F8D023400C95DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1F05C1F8D023400C95DA8 /* AppDelegate.swift */; };
 		A6E1F05F1F8D023400C95DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1F05E1F8D023400C95DA8 /* ViewController.swift */; };
 		A6E1F0621F8D023400C95DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E1F0601F8D023400C95DA8 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		118FE08B21F0D52433C264C5 /* Pods-DDSlideJigsaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSlideJigsaw.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSlideJigsaw/Pods-DDSlideJigsaw.release.xcconfig"; sourceTree = "<group>"; };
 		8BEF280C82E2AD604D1FD58D /* Pods-DDSlideJigsaw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSlideJigsaw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDSlideJigsaw/Pods-DDSlideJigsaw.debug.xcconfig"; sourceTree = "<group>"; };
 		A653BBD31F91C7DB000FD406 /* SJMainGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJMainGameScene.swift; sourceTree = "<group>"; };
+		A653BBD51F920939000FD406 /* SJPieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJPieceNode.swift; sourceTree = "<group>"; };
 		A6E1F0591F8D023400C95DA8 /* DDSlideJigsaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDSlideJigsaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E1F05C1F8D023400C95DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6E1F05E1F8D023400C95DA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				A653BBD31F91C7DB000FD406 /* SJMainGameScene.swift */,
+				A653BBD51F920939000FD406 /* SJPieceNode.swift */,
 			);
 			path = MainGame;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6E1F05F1F8D023400C95DA8 /* ViewController.swift in Sources */,
+				A653BBD61F920939000FD406 /* SJPieceNode.swift in Sources */,
 				A653BBD41F91C7DB000FD406 /* SJMainGameScene.swift in Sources */,
 				A6E1F05D1F8D023400C95DA8 /* AppDelegate.swift in Sources */,
 			);
