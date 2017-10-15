@@ -25,7 +25,6 @@ class SJMainGameScene: SKScene {
         let backGroundNode = SKSpriteNode(imageNamed:"background")
         backGroundNode.anchorPoint = CGPoint(x: 0,y: 0)
         backGroundNode.position = self.position
-        let size = self.size
         backGroundNode.size = self.size
         addChild(backGroundNode)
     }
@@ -40,6 +39,7 @@ class SJMainGameScene: SKScene {
                 piecesArray.append(pieceNode)
                 pieceNode.anchorPoint = CGPoint(x:0, y: 0)
                 pieceNode.position = CGPoint(x: 0.1 * Double(colIndex), y: 0.1 * Double(rowIndex))
+                pieceNode.zPosition = 1
             }
         }
         
