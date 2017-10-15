@@ -12,11 +12,23 @@ import SpriteKit
 class SJMainGameScene: SKScene {
     
     var piecesArray : Array<SJPieceNode> = []
+    var pieceHoldersArray : Array<SJPieceHolder> = []
 
     override func didMove(to view: SKView) {
         setUpScenery()
         
         setupPieces()
+        
+    }
+    
+    func setupRowAndCol(row: Int, col: Int) {
+        pieceHoldersArray.removeAll()
+        
+        let totalCount = row * col + 1;
+        for index in 1...totalCount {
+            let pieceHolder = SJPieceHolder()
+            self.pieceHoldersArray.append(pieceHolder)
+        }
         
     }
     
