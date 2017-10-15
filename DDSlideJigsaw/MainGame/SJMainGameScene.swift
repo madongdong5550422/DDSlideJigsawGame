@@ -11,6 +11,7 @@ import SpriteKit
 
 class SJMainGameScene: SKScene {
     
+    var mainImage : UIImage?
     var piecesArray : Array<SJPieceNode> = []
     var pieceHoldersArray : Array<SJPieceHolder> = []
 
@@ -19,6 +20,12 @@ class SJMainGameScene: SKScene {
         
         setupPieces()
         
+    }
+    
+    func setupMainScene(row: Int, col: Int, image: UIImage) {
+        self.mainImage = image
+        
+        self.setupRowAndCol(row: row, col: col)
     }
     
     func setupRowAndCol(row: Int, col: Int) {
