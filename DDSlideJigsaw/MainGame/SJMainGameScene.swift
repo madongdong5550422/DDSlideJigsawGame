@@ -9,11 +9,19 @@
 import UIKit
 import SpriteKit
 
+fileprivate let z_position_backGroud :CGFloat = 0.0
+fileprivate let z_position_holderbg :CGFloat = 1.0
+fileprivate let z_position_piece :CGFloat = 2.0
+
+
+
 class SJMainGameScene: SKScene {
+    
     
     var mainImage : UIImage?
     var piecesArray : Array<SJPieceNode> = []
     var pieceHoldersArray : Array<SJPieceHolder> = []
+    var holdBGNode : SKSpriteNode?
 
     override func didMove(to view: SKView) {
         setUpScenery()
@@ -26,6 +34,14 @@ class SJMainGameScene: SKScene {
         self.mainImage = image
         
         self.setupRowAndCol(row: row, col: col)
+    }
+    
+    func setupHolderBGNode() {
+        self.holdBGNode = SKSpriteNode.init(imageNamed: "bgImage")
+        self.holdBGNode?.anchorPoint = CGPoint.init(x: 0, y: 0)
+        self.holdBGNode?.position = self.position;
+        self.holdBGNode?.zPosition = z_position_holderbg
+        
     }
     
     func setupRowAndCol(row: Int, col: Int) {
@@ -58,7 +74,7 @@ class SJMainGameScene: SKScene {
                 piecesArray.append(pieceNode)
                 pieceNode.anchorPoint = CGPoint(x:0, y: 0)
                 pieceNode.position = CGPoint(x: 0.1 * Double(colIndex), y: 0.1 * Double(rowIndex))
-                pieceNode.zPosition = 1
+                pieceNode.zPosition = z_position_piece
             }
         }
         
