@@ -10,4 +10,6 @@ import UIKit
 
 class SJPieceHolder: NSObject {
     var pieceNode:SJPieceNode?
+    var col:UInt = 0
+    var row:UInt = 0
 }
